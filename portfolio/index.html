@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zach Gulde Portfolio</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <style>
+a:link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body class="container mx-auto lg:grid lg:grid-cols-2 gap-x-10 pt-16 pb-32 space-y-32">
+
+    <h1 class="col-span-2 text-center text-4xl">Zach Gulde Open Source Portfolio</h1>
+
+    <p class="col-span-2 justify-self-center text-center w-3/4">
+        I do a mix of teaching, development work, and data analysis. Below is a selection of my open source work:
+    </p>
+
+    <section class="p-5 border border-green-800 rounded-md space-y-4">
+        <h2 class="mb-3 text-xl">Lesson on Relationships in Spring Boot</h2>
+        <p>
+            This is an asynchronous "treasure map" style lesson I put together on the topic of how to implement
+            relationships between entities in Spring Boot.
+        </p>
+        <img src="spring-boot-relationships-treasure-map.png" />
+        <p>Check out the <a class="text-blue-600" href="https://docs.google.com/presentation/d/e/2PACX-1vTZ6Ht7aGkSt_NNx9uTQUhk34wePFcpmRVX4qd3xUMDXPvkI2oOEvnWzOGl7GMcFsdtR5uBb0y6hyGA/pub?start=true&loop=true&delayms=60000&slide=id.p">interactive lesson treasure map</a> and the supporting <a class="text-blue-600" href="https://github.com/zgulde/spring-boot-relationships-demo">GitHub repo</a>.</p>
+    </section>
+
+    <section class="p-5 border border-green-800 rounded-md space-y-4">
+        <h2 class="text-xl mb-3">Animations</h2>
+        <p>
+            I really enjoy making simple animations to explain concepts visually. They say a picture is worth a thousand words, so it follows that every animation frame adds 1,000 times the explanatory power.
+        </p>
+        <p>Here's a quick example of one:</p>
+        <img class="max-w-full" src="spring-boot-data-flow.gif" />
+        <p>Check out <a class="text-blue-600" href="https://stats-demos.zach.wiki/">this page</a> to see some more animations I've made with custom python and matplotlib code to explain statistics and data science concepts.</p>
+    </section>
+
+    <section class="p-5 border border-green-800 rounded-md space-y-4">
+        <h2 class="mb-3 text-xl"><code>cods</code></h2>
+        <p>
+            <code>cods</code> is a deployment tool that automates the setup of, and deployment to, a server with a MySQL database and virtual hosting through nginx which reverse proxies to node.js, python, php, or java web applications, or serves static sites.
+        </p>
+        <img src="cods-banner.gif" />
+        <p><a class="text-blue-600" href="https://github.com/zgulde/cods">Learn more about it.</a></p>
+    </section>
+
+    <section class="p-5 border border-green-800 rounded-md space-y-4">
+        <h2 class="mb-3 text-xl"><code>hlre</code></h2>
+        <p>
+            <code>hlre</code> is a TUI app that shows the matches of a python flavored regular expression as you type it.
+        </p>
+        <img src="hlre.gif" />
+        <p><a class="text-blue-600" href="https://github.com/zgulde/hlre">Learn more about it,</a> or install it and play with it yourself!</p>
+        <pre><code>python3 -m pip install hlre</code></pre>
+    </section>
+
+    <section class="p-5 border border-green-800 rounded-md space-y-4">
+        <h2 class="mb-3 text-xl">Pandas Extensions</h2>
+        <p>
+            I built a python module that adds a bunch of additional methods that I frequently use to <a href="https://pandas.pydata.org">pandas</a>' data frames and series objects.
+        </p>
+        <pre class="p-3 border border-2"><code><span class="text-red-600">import</span> <span class="text-green-600">zgulde.extend_pandas</span></code></pre>
+        <p>
+            Check out <a class="text-blue-600" href="https://github.com/zgulde/zgulde-python/blob/master/zgulde/extend_pandas.py">the module itself</a> or <a class="text-blue-600" href="https://github.com/zgulde/zgulde-python">the repo that contains it</a> for various other python data science goodies (like my <a class="text-blue-600" href="https://github.com/zgulde/zgulde-python/blob/master/zplot_viz_demo.ipynb">data viz helper functions</a>).
+        </p>
+        <img src="crosstab-scatter.png" />
+    </section>
+
+    <section class="p-5 border border-green-800 rounded-md space-y-4">
+        <h2 class="mb-3 text-xl">Others</h2>
+        <p>Here are some other miscellaneous projects that I'm also fairly fond of:</p>
+        <ul class="list-disc space-y-4">
+            <li>
+                I made a <a class="text-blue-600" href="https://pandoc.org">pandoc</a> filter that automatically converts graphviz or plantuml diagrams in markdown files into base64 encoded images in the HTML output. <a class="text-blue-600" href="https://github.com/zgulde/pandoc-diagram-filter">Check it out on GitHub</a>.
+            </li>
+            <li>
+                I made <a class="text-blue-600" href="https://github.com/zgulde/lumo-blog">a simple blog application with a complicated technology stack</a>. Unit tested clojurescript running with (now deprecated) <a href="https://github.com/anmonteiro/lumo">lumo</a> makeup the backend and react + redux code tested with enzyme makeup the frontend.
+            </li>
+            <li>
+                I made <a class="text-blue-600" href="https://github.com/zgulde/pebble-blackjack">blackjack game for the pebble smartwatch</a>. While sadly the pebble is no longer produced, my code still lives on GitHub.
+            </li>
+            <li>
+                I wrote <a class="text-blue-600" href="https://github.com/zgulde/hn.el">an elisp script that lets you browse hacker news inside of emacs</a>. (These days I spend more time in vim and jupyter notebooks though.)</li>
+            </li>
+            <li>
+                I made a <a class="text-blue-600" href="https://github.com/zgulde/parsegitlog">python command line utility / library</a> for converting a git repository log into a format more useful for data analysis.
+            </li>
+        </ul>
+    </section>
+
+
+</body>
+</html>
